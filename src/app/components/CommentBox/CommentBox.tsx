@@ -5,18 +5,6 @@ import { SendHorizonal } from "lucide-react"; // optional, install lucide-react 
 const CommentBox = () => {
   const [comment, setComment] = useState("");
 
-  const handleClear = () => {
-    setComment("");
-  };
-
-  const handlePaste = async () => {
-    try {
-      const text = await navigator.clipboard.readText();
-      setComment(text);
-    } catch (err) {
-      console.error("Failed to read clipboard: ", err);
-    }
-  };
 
   const handleSend = () => {
     if (comment.trim() === "") return;

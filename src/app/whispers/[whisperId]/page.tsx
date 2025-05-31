@@ -5,10 +5,11 @@ import { useParams } from "next/navigation";
 
 export default function Page() {
   const params = useParams();
-  const id = params.id;
+  const idParam = params.whisperId;
+  const id = Array.isArray(idParam) ? idParam[0] : idParam;
   return (
     <div>
-      <Confession id={id}/>
+      <Confession whisperId={id}/>
     </div>
   );
 }

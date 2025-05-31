@@ -2,10 +2,10 @@ import React from "react";
 import CommentBox from "../CommentBox";
 
 interface ConfessionProps {
-  id?: number | string;
+  whisperId?: string;
 }
 
-const Confession = ({ id }: ConfessionProps) => {
+const Confession = ({ whisperId }: ConfessionProps) => {
   return (
   <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 flex justify-center py-5">
   <div className="layout-content-container flex flex-col w-full max-w-[960px]">
@@ -18,7 +18,7 @@ const Confession = ({ id }: ConfessionProps) => {
 
     {/* Confession Title */}
     <h2 className="text-[#141414] tracking-light text-[24px] sm:text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">
-      {id ? `Confession #${id}` : "Confession"}<br />
+      {whisperId ? `Confession #${whisperId}` : "Confession"}<br />
       My biggest fear is not being good enough for my family.
     </h2>
 

@@ -2,7 +2,6 @@
 import React from "react";
 import IntroSection from "./components/IntroSection";
 import ExploreSection from "./components/ExploreSection";
-import AdminDashboard from "./components/admin/AdminDashboard";
 export default function Home() {
   return (
     <div
@@ -14,7 +13,6 @@ export default function Home() {
           <div>
             <IntroSection />
             <ExploreSection />
-            {/* <AdminDashboard /> */}
           </div>
         </main>
       </div>
