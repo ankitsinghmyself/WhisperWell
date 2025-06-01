@@ -1,0 +1,5 @@
+# This file is used to show how to set up the environment variables for the Prisma database connection.
+# Copy this file to .env and fill in the values.
+# Make sure to replace the placeholders with your actual database credentials.
+# Database connection URL
+DATABASE_URL="postgresql://whisper_owner:***********/whisper?sslmode=require" 

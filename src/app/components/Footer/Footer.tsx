@@ -7,19 +7,19 @@ export default function Footer() {
         {/* Link Section */}
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-10">
           <a
-            href="#"
+            href="/terms-of-service"
             className="text-[#757575] text-base font-normal leading-normal hover:underline"
           >
             Terms of Service
           </a>
           <a
-            href="#"
+            href="/privacy-policy"
             className="text-[#757575] text-base font-normal leading-normal hover:underline"
           >
             Privacy Policy
           </a>
           <a
-            href="#"
+            href="/contact-us"
             className="text-[#757575] text-base font-normal leading-normal hover:underline"
           >
             Contact Us

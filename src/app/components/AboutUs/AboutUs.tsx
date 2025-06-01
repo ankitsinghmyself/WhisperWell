@@ -95,10 +95,10 @@ const AboutUs = () => {
               <div
                 className="w-32 h-32 bg-center bg-cover rounded-full"
                 style={{
-                  backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLgqK9_O5LK40VdKaWSfotZ9bnc_OSvKk21ayVAe31LjEj10w9N4_n7YJJVBKUgYeX8t0JUt9cFueLS8YRxxrSHrtN4mYyt5w-uoCVAw8d-dQUncp70BMfr59lGx1hamUpMVLSFeZ-ZHHxsOGB-3a_ah8UkK4N2a_0G8zHrpVMEB5KuHGLkCb8qpk9qytgSVWY79k0vvjeCr_M6gEckegwKK6Lr_drx6k-DQgaCv2IoWMfQ5uEuF1tJj49lvVKRH0RgWx4n6PoRTy3")`,
+                  backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSBfiUyjwuzj-QFat4Jm6Ffl0c3cwPeM40vJ3WcEexLTyljswF7PfHCGDZV5r2n_ezyR8PVSJN2hNrh7MVM63N-28V3jaNnnexGhy9xNqP22Ztkr-hJLBzms3Pq-w6yXTcRs0spiJ8j1EHBu9ejADhSTYAy_FgS8VADrVX2FwtfA1zg1X99k9BHudW64FbHtE6a3CaGv5sgC17OA43oPn2MX2Eb9PUEAXOaPeh3smh0g8dzLn3BN6VVPkyWzFb1QpI8S6cH1UY_dFG")`,
                 }}
               />
-              <p className="mt-3 font-medium text-[#141414]">Sarah Chen</p>
+              <p className="mt-3 font-medium text-[#141414]">Ankit Singh</p>
               <p className="text-sm text-[#757575]">Co-founder & CEO</p>
             </div>
             {/* Add more team members as needed */}
