@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && prisma generate",
+    "build": "next build",
+    "postbuild": "./vercel-build.sh",
+    "postinstall": "prisma generate",
     "start": "next start",
     "lint": "next lint"
   },
