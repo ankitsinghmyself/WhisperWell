@@ -3,9 +3,9 @@ import { prisma } from "@/lib/prisma";
 
 export async function GET(
   _req: NextRequest,
-  context: { params: { whisperId: string } }
+  context: { params: Promise<{ whisperId: string }> } // params is a Promise now
 ) {
-  const { params } = await context;
+  const params = await context.params;  // await params here
   const { whisperId } = params;
 
   if (!whisperId) {

@@ -3,17 +3,21 @@ import CommentBox from "../CommentBox";
 import { timeSince } from "@/lib/utils";
 import { FaHeart } from "react-icons/fa";
 interface Comment {
-  name: string;
-  time: string;
-  message: string;
-  image: string;
+  author: string;
+  createdAt: string;
+  content: string;
+  image?: string;
 }
 
 interface ConfessionData {
   title: string;
   body: string;
+  content: string; 
   reactions: { type: string; count: number }[];
   comments: Comment[];
+  _count: {
+    comments: number;
+  };
 }
 
 interface ConfessionProps {
@@ -45,7 +49,7 @@ const Confession = ({ whisperId }: ConfessionProps) => {
   }, [whisperId, isComment]);
   useEffect(() => {
     const likedPosts = JSON.parse(localStorage.getItem("likedPosts") || "{}");
-    setLiked(!!likedPosts[whisperId]);
+    setLiked(whisperId ? !!likedPosts[whisperId] : false);
   }, [whisperId]);
 
   const handleLikeToggle = async () => {
@@ -68,9 +72,9 @@ const Confession = ({ whisperId }: ConfessionProps) => {
         const likedPosts = JSON.parse(
           localStorage.getItem("likedPosts") || "{}"
         );
-        if (data.liked) {
+        if (data.liked && whisperId) {
           likedPosts[whisperId] = true;
-        } else {
+        } else if (whisperId) {
           delete likedPosts[whisperId];
         }
         localStorage.setItem("likedPosts", JSON.stringify(likedPosts));
